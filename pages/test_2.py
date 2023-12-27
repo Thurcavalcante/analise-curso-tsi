@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import plotly.express as px
 
 st.markdown("# Page 2 ❄️")
 st.sidebar.markdown("# Page 2 ❄️")
@@ -38,4 +39,17 @@ filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 
 st.subheader('Map of all pickups at %s:00' % hour_to_filter)
 st.map(filtered_data)
+
+
+# Novo Mapa do IFRN Canguaretama
+location_data = {
+    'latitude': [-6.357552],
+    'longitude': [-35.162903],
+    'name': ['IFRN Canguaretama']
+}
+
+location_df = pd.DataFrame(location_data)
+
+st.subheader('Map of all pickups at %s:00' % hour_to_filter)
+st.map(location_df)
 

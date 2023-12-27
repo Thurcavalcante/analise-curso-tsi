@@ -9,6 +9,10 @@ import pydeck as pdk
 st.markdown("# Page 3 🎉")
 st.sidebar.markdown("# Page 3 🎉")
 
+# Criar colunas para layout da página (2 colunas, 3 colunas, 3 colunas)
+col1, col2 = st.columns(2)
+col3, col4, col5 = st.columns(3)
+
 # G1
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 

@@ -1,9 +1,8 @@
 import streamlit as st
-
 import pandas as pd
 
 # Titulo do site
-st.set_page_config(page_title="CURSO TSI CANG")
+st.set_page_config(page_title="TSI - Canguaretama")
 
 # Main
 st.title('Curso: Tecnologia em Sistemas para Internet - TSI') 
